@@ -1,0 +1,354 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:200%;
+    width: 200%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#d9d9d9;
+    padding:20px;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+    width:900px;
+    background:#050505;
+
+    padding:14px;
+    border-radius:30px;
+
+    display:grid;
+
+    grid-template-columns:
+    2fr 1fr 1fr 1.1fr;
+
+    grid-template-rows:
+    200px 200px 190px;
+
+    gap:12px;
+}
+
+/* COMMON CARD */
+
+.card{
+    background:#111;
+    border:1px solid #222;
+    border-radius:24px;
+    overflow:hidden;
+    position:relative;
+    color:white;
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* INTRO */
+
+.intro{
+    padding:22px;
+    background:linear-gradient(to bottom,#181818,#111);
+}
+
+.user{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:24px;
+}
+
+.user img{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+}
+
+.user h4{
+    font-size:14px;
+}
+
+.user span{
+    font-size:11px;
+    color:#777;
+}
+
+.intro h1{
+    font-size:32px;
+    line-height:1.2;
+
+    margin-bottom:14px;
+}
+
+.intro p{
+    color:#8a8a8a;
+    font-size:13px;
+    line-height:1.6;
+}
+
+
+.phone{
+    background:#efefef;
+}
+
+.tablet{
+    background:#fff;
+}
+
+
+
+.social{
+    padding:12px;
+
+    display:grid;
+    grid-template-rows:auto 1fr;
+
+    gap:12px;
+}
+
+.icon-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:8px;
+}
+
+.icon-grid div{
+    height:48px;
+
+    background:#181818;
+    border:1px solid #262626;
+
+    border-radius:14px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:16px;
+}
+
+.resource{
+    background:#0e0e0e;
+
+    border-radius:20px;
+    border:1px solid #232323;
+
+    padding:18px;
+
+    position:relative;
+}
+
+.resource span{
+    color:#777;
+    font-size:12px;
+}
+
+.resource h2{
+    font-size:22px;
+    line-height:1.3;
+
+    margin-top:10px;
+}
+
+.arrow-btn{
+    position:absolute;
+
+    right:14px;
+    bottom:14px;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    background:#171717;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.stack{
+    padding:18px;
+}
+
+.stack span{
+    color:#777;
+    font-size:12px;
+}
+
+.stack h2{
+    margin:10px 0 18px;
+}
+
+.tech-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:8px;
+}
+
+.tech-grid div{
+    height:48px;
+
+    background:#181818;
+    border:1px solid #262626;
+
+    border-radius:12px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.toggle{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.switch{
+    width:90px;
+    height:46px;
+
+    border-radius:40px;
+
+    background:#181818;
+
+    position:relative;
+}
+
+.switch::before{
+    content:"";
+
+    position:absolute;
+
+    width:34px;
+    height:34px;
+
+    border-radius:50%;
+
+    background:white;
+
+    top:6px;
+    right:6px;
+}
+
+.learning{
+    grid-column:1/3;
+
+    padding:22px;
+}
+
+.learning h1{
+    font-size:32px;
+    line-height:1.2;
+
+    margin-bottom:14px;
+}
+
+.learning p{
+    width:65%;
+
+    color:#8a8a8a;
+
+    font-size:13px;
+    line-height:1.6;
+}
+
+.framer{
+    position:absolute;
+
+    right:55px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:78px;
+    height:78px;
+
+    border-radius:20px;
+
+    background:#181818;
+    border:1px solid #262626;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:28px;
+}
+
+.contact{
+    grid-column:3/5;
+
+    padding:22px;
+}
+
+.contact span{
+    color:#777;
+    font-size:12px;
+}
+
+.contact h1{
+    font-size:32px;
+
+    margin:14px 0;
+}
+
+.contact p{
+    width:80%;
+
+    color:#8a8a8a;
+
+    font-size:13px;
+    line-height:1.6;
+}
+
+.contact-btn{
+    position:absolute;
+
+    right:16px;
+    bottom:16px;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    background:#181818;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@media(max-width:900px){
+
+.container{
+    grid-template-columns:1fr;
+    grid-template-rows:auto;
+}
+
+.card{
+    height:220px;
+}
+
+.learning,
+.contact{
+    grid-column:auto;
+}
+
+}
